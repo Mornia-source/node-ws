@@ -43,8 +43,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: |
-            ghcr.io/${{ env.OWNER }}/cherry:latest  # 这里没有注释
+          tags: ghcr.io/${{ env.OWNER }}/cherry:latest  # 这里完全删除了注释
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=http server
