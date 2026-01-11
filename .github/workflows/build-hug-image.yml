@@ -44,7 +44,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER }}/cherry:latest  # 使用小写的 OWNER 环境变量
+            ghcr.io/${{ env.OWNER }}/cherry:latest  # 这里不加注释
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
             org.opencontainers.image.description=http server
